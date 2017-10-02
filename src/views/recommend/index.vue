@@ -97,7 +97,7 @@
       },
       ...mapMutations({
         setDisc: 'SET_DISC'
-      }) 
+      })
     }
   }
 </script>
