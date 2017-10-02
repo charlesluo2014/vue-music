@@ -138,7 +138,7 @@
   import { playMode } from 'common/js/config'
   import Lyric from 'lyric-parser'
   import Scroll from 'base/scroll'
-  import PlayList from 'base/playList/playList'
+  import PlayList from 'base/playlist/playlist'
   import { playerMixin } from 'common/js/mixin'
 
   const transform = prefixStyle('transform')
