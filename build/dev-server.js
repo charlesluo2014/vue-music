@@ -66,6 +66,7 @@ apiRoutes.get('/lyric', function(req, res) {
     console.log(error)
   })
 })
+
 apiRoutes.get('/getSongList', function(req, res) { 
   const url = 'https://c.y.qq.com/qzone/fcg-bin/fcg_ucc_getcdinfo_byids_cp.fcg' 
   axios.get(url, {
