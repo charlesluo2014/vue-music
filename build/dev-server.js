@@ -37,7 +37,7 @@ apiRoutes.get('/getDiscList', function(req, res) {
       host: 'c.y.qq.com'
     },
     params: req.query
-  }).then(response => {
+  }).then(response => { 
     res.json(response.data)
   }).catch(error => {
     console.log(error)
@@ -70,20 +70,12 @@ apiRoutes.get('/getSongList', function(req, res) {
   const url = 'https://c.y.qq.com/qzone/fcg-bin/fcg_ucc_getcdinfo_byids_cp.fcg' 
   axios.get(url, {
     headers: {
-      referer: 'https://c.y.qq.com',
+      referer: 'https://y.qq.com/n/yqq/playlist/3569901006.html',
       host: 'c.y.qq.com'
     },
     params: req.query
   }).then(response => {
-    var ret = response.data
-    if (typeof ret === 'string') {
-      var reg = /^\w+\(({[^()]+})\)$/
-      var matches = ret.match(reg)
-      if (matches) {
-        ret = JSON.parse(matches[1])
-      }
-    }
-    res.json(ret)
+    res.json(response.data)
   }).catch(error => {
     console.log(error)
   })

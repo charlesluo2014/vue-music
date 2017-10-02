@@ -48,7 +48,7 @@ export function getSongList(disstid) {
     utf8: 1,
     onlysong: 0,
     disstid,
-    format: 'jsonp',
+    format: 'json',
     g_tk: 5381,
     loginUin: 0,
     hostUin: 0,
